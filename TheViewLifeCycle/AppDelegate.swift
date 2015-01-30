@@ -13,11 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
+  var viewController: UIViewController?
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
     
     println("didFinishLaunchingWithOptions")
+    
+    viewController = self.window?.rootViewController
     
     return true
   }
@@ -35,6 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     println("applicationDidEnterBackground")
+    
+    NSNotificationCenter.defaultCenter().postNotificationName(kApplicationDidEnterBackgroundNotificationKey, object: self)
+
+    
   }
   
   func applicationWillEnterForeground(application: UIApplication) {

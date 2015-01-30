@@ -13,6 +13,7 @@
 		C23F86C21A7B893400B80609 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23F86C11A7B893400B80609 /* Images.xcassets */; };
 		C23F86C51A7B893400B80609 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23F86C31A7B893400B80609 /* LaunchScreen.xib */; };
 		C23F86D11A7B893400B80609 /* TheViewLifeCycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23F86D01A7B893400B80609 /* TheViewLifeCycleTests.swift */; };
+		C23F86DD1A7BB85F00B80609 /* NSNotificationCenterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23F86DC1A7BB85F00B80609 /* NSNotificationCenterKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		C23F86CF1A7B893400B80609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C23F86D01A7B893400B80609 /* TheViewLifeCycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheViewLifeCycleTests.swift; sourceTree = "<group>"; };
 		C23F86DA1A7B89DE00B80609 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C23F86DC1A7BB85F00B80609 /* NSNotificationCenterKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenterKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				C23F86BA1A7B893400B80609 /* AppDelegate.swift */,
+				C23F86DC1A7BB85F00B80609 /* NSNotificationCenterKeys.swift */,
 				C23F86BC1A7B893400B80609 /* ViewController.swift */,
 				C23F86BE1A7B893400B80609 /* Main.storyboard */,
 				C23F86C11A7B893400B80609 /* Images.xcassets */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C23F86BD1A7B893400B80609 /* ViewController.swift in Sources */,
+				C23F86DD1A7BB85F00B80609 /* NSNotificationCenterKeys.swift in Sources */,
 				C23F86BB1A7B893400B80609 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

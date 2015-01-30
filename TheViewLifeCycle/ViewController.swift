@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     println("viewDidLoad")
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopRunning", name: kApplicationDidEnterBackgroundNotificationKey, object: nil)
+    
   }
 
   override func didReceiveMemoryWarning() {
@@ -43,6 +46,10 @@ class ViewController: UIViewController {
   }
   override func viewDidAppear(animated: Bool) {
     println("viewDidAppear")
+  }
+  
+  func stopRunning() {
+    println("stopRunning()")
   }
 
 }
