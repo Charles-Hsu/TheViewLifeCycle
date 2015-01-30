@@ -18,6 +18,21 @@ applicationWillResignActive
 applicationDidEnterBackground
 ```
 
+# Notification
+
+Add the following code in AppDelegate.swift to post a notification when the app entered into background
+```swift
+func applicationDidEnterBackground(application: UIApplication) {
+  NSNotificationCenter.defaultCenter().postNotificationName(kApplicationDidEnterBackgroundNotificationKey, object: self)
+}
+```
+And in ViewController.swift, add a observer to listen the notification, then call the func soptRunning to stop playing background music.
+```swift
+override func viewDidLoad() {
+  super.viewDidLoad()
+  NSNotificationCenter.defaultCenter().addObserver(self, selector: "stopRunning", name: kApplicationDidEnterBackgroundNotificationKey, object: nil)
+}
+```
 # Reference
 
 31 Days of iOS: Day 24–The View Life Cycle http://chrisrisner.com/31-Days-of-iOS--Day-24%E2%80%93The-View-Life-Cycle
